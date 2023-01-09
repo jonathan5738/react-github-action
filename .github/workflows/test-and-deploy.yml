@@ -34,7 +34,7 @@ jobs:
           path: dist
 
   deploy-app:
-    needs: test-app
+    needs: build-app
     runs-on: ubuntu-latest
     steps:
       - name: Deploy application
