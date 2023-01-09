@@ -17,7 +17,7 @@ jobs:
       - name: install dependencies
         run: npm ci
       
-      - name: run test:
+      - name: run test
         run: npm run test
 
       - name: upload artifact
