@@ -20,6 +20,12 @@ jobs:
       - name: run test:
         run: npm run test
 
+      - name: upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-files
+          path: dist
+
   deploy-app:
     needs: test-app
     runs-on: ubuntu-latest
